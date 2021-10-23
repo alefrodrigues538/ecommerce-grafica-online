@@ -4,6 +4,8 @@ import Image from 'next/image'
 
 import Logo from '../imgs/logo.png'
 
+import Link from 'next/link'
+
 const NavbarDropdown = ({ children, label }) => {
     const [isVisible, setIsVisible] = useState(false)
     return (
@@ -28,7 +30,9 @@ const NavbarDropdown = ({ children, label }) => {
 const NavbarMenuItem = ({ label }) => {
     return (
         <div className="menuitem-container">
-            <a href="#" className="navbar-menuitem-label">{label ? label : 'menu-item'}</a>
+            <Link href="#">
+                <span className="navbar-menuitem-label">{label ? label : 'menu-item'}</span>
+            </Link>
         </div>
     )
 }
@@ -44,11 +48,11 @@ const SearchBar = () => {
 }
 const LoginButton = () => {
     return (
-        <div className="navbar-loginbutton-container">
-            <a href="/login" style={{ textDecoration: 'none' }}>
+        <Link href="/login">
+            <div className="navbar-loginbutton-container">
                 <span className="navbar-login-button">Entrar/Cadastrar</span>
-            </a>
-        </div>
+            </div>
+        </Link>
     )
 }
 
@@ -68,10 +72,12 @@ function Navbar() {
                 </div>
                 <div className="container">
                     <div className="navbar-mid-container">
-                        <a href="/" className="logo-link">
-                            <Image src={Logo} alt="logo-brand" className="logo-img"
-                                height={90} width={135} />
-                        </a>
+                        <Link href="/">
+                            <span className="logo-link">
+                                <Image src={Logo} alt="logo-brand" className="logo-img"
+                                    height={90} width={135} />
+                            </span>
+                        </Link>
                         <SearchBar />
 
                         <button type="button" className="btn btn-primary">
