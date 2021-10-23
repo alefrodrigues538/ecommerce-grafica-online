@@ -1,0 +1,23 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background-color: var(--global-background-color);
+}
+body main{
+  background-color: #EEE;
+  min-height: 57vh;
+}
+body footer{
+  min-height: 25vh;
+  background-color: var(--footerbar-background-color);
+  flex-grow: inherit;
+  color: #DDD;
+}
+.container{
+  max-width: 1150px!important;
+}

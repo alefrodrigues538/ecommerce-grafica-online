@@ -1,0 +1,18 @@
+:root{
+    --global-background-color:#eee;
+
+
+    --navbar-fontsize: 1rem;
+    --navbar-background-color0:#fff;
+    --navbar-background-color1:#e4e4e4;
+    --navbar-hover-link-color0:#4297e0;
+    --navbar-dropdown-background:#4297e0;
+    --navbar-line-divider-color:#4297e0;
+
+    --searchbar-border-color: #4297e0;
+
+    --facebook-icon-color: #3b5998;
+    
+
+    --footerbar-background-color: #4a4a4a;
+}
