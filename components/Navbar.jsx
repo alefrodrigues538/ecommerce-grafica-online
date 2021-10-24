@@ -8,10 +8,21 @@ import Link from 'next/link'
 
 const NavbarDropdown = ({ children, label }) => {
     const [isVisible, setIsVisible] = useState(false)
+
+    function handleShowContent() {
+        setIsVisible(true)
+    }
+    function handleHideContent() {
+        setIsVisible(false)
+    }
+    function handleToggleVisible() {
+        setIsVisible(!isVisible)
+    }
+
     return (
         <div className="navbar-dropdown-container"
-            onClick={() => setIsVisible(!isVisible)}
-            onMouseOver={() => setIsVisible(true)} onMouseLeave={() => setIsVisible(false)}>
+        >
+
             <span className="navbar-dropdown-label " >
                 <i className="fas fa-bars dropdown-icon" />
                 <span>
@@ -21,6 +32,11 @@ const NavbarDropdown = ({ children, label }) => {
                     "fas fa-chevron-right dropdown-icon"} />
 
             </span>
+            <div style={{ width: '100%', height: '100%', position: 'relative', top: '-25px', backgroundColor: 'rgba(0,0,0,0.5)' }}
+                onClick={() => handleToggleVisible()}
+                onMouseOver={() => handleShowContent()}
+                onMouseLeave={() => handleHideContent()} />
+
             <div className={isVisible ? "menuitem-dropdown-content-container" : "menuitem-dropdown-content-hide"}>
                 {children}
             </div>
