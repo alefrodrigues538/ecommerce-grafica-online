@@ -153,6 +153,9 @@
     border-color: var(--searchbar-border-color);
     color: var(--searchbar-border-color);
 }
+.showSearchbar{
+    display: none!important;
+}
 
 .navbar-loginbutton-container{
     padding: 1px;
@@ -161,17 +164,20 @@
 }
 .navbar-loginbutton-container:hover{
     cursor: pointer;
-    text-decoration: none;
-    color: #222!important;
+    text-decoration: underline;
 }
 .navbar-login-button{
     color: var(--navbar-hover-link-color0);
     font-size: var(--navbar-fontsize);
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 835px){
     .menuitem-container{
         display: none;
+    }
+    .showSearchbar{
+        width: 80vw;
+        margin: 0 auto 16px auto;
     }
 }
 @media only screen and (max-width: 565px){
@@ -180,5 +186,11 @@
     }
     .navbar-dropdown-label{
         font-size: 1rem!important;
+    }
+    .showSearchbar{
+        display: flex!important;
+    }
+    .menuitem-dropdown-content-container{
+        top: 225px;
     }
 }

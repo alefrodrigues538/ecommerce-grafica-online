@@ -21,7 +21,8 @@ const NavbarDropdown = ({ children, label }) => {
 
     return (
         <div className="navbar-dropdown-container"
-        >
+            onMouseOver={() => handleShowContent()}
+            onMouseLeave={() => handleHideContent()}>
 
             <span className="navbar-dropdown-label " >
                 <i className="fas fa-bars dropdown-icon" />
@@ -32,7 +33,7 @@ const NavbarDropdown = ({ children, label }) => {
                     "fas fa-chevron-right dropdown-icon"} />
 
             </span>
-            <div style={{ width: '100%', height: '100%', position: 'relative', top: '-25px', backgroundColor: 'rgba(0,0,0,0.5)' }}
+            <div style={{ width: '100%', height: '120%', position: 'relative', top: '-25px', cursor: 'pointer' }}
                 onClick={() => handleToggleVisible()}
                 onMouseOver={() => handleShowContent()}
                 onMouseLeave={() => handleHideContent()} />
@@ -43,18 +44,30 @@ const NavbarDropdown = ({ children, label }) => {
         </div>
     )
 }
-const NavbarMenuItem = ({ label }) => {
+const NavbarDropdownItem = ({ label }) => {
     return (
-        <div className="menuitem-container">
-            <Link href="#">
-                <span className="navbar-menuitem-label">{label ? label : 'menu-item'}</span>
+        <div className="dropdownitem-container">
+            <Link href="/">
+                <span className={"navbar-menuitem-label"
+                }>{label ? label : 'menu-item'}</span>
             </Link>
         </div>
     )
 }
-const SearchBar = () => {
+const NavbarMenuItem = ({ label, hideLowResolution }) => {
     return (
-        <div className="input-group search-bar-container searchbar-style">
+        <div className="menuitem-container">
+            <Link href="/">
+                <span className={"navbar-menuitem-label"}>{label ? label : 'menu-item'}</span>
+            </Link>
+        </div>
+    )
+}
+const SearchBar = ({ className }) => {
+    return (
+        <div className={
+            className ? "input-group showSearchbar searchbar-style " :
+                "input-group search-bar-container searchbar-style "}>
             <label className="custom-file-label searchbar-icon-label">
                 <i className="fas fa-search searchbar-icon"></i>
             </label>
@@ -96,29 +109,35 @@ function Navbar() {
                         </Link>
                         <SearchBar />
 
-                        <button type="button" className="btn btn-primary">
-                            <i className="fas fa-shopping-cart" /> Carrinho </button>
+                        <button type="button" className="btn btn-outline-primary">
+                            <i className="fas fa-shopping-cart" /> Carrinho
+                            (0)
+                        </button>
+
+                    </div>
+                    <div style={{ display: 'flex' }}>
+                        <SearchBar className="showSearchBar" />
                     </div>
                 </div>
                 <div className="container">
                     <div className="navbar-menu-container">
-                        <NavbarDropdown label="Mais Produtos">
-                            <NavbarMenuItem label="Cartão de visita" />
-                            <NavbarMenuItem label="Cartão de visita" />
-                            <NavbarMenuItem label="Cartão de visitaCartão de visitaCartão de visita" />
-                            <NavbarMenuItem label="Cartão de visita" />
-                            <NavbarMenuItem label="Cartão de visita" />
-                            <NavbarMenuItem label="Cartão de visita" />
-                            <NavbarMenuItem label="Cartão de visitaCartão de visita" />
-                            <NavbarMenuItem label="Cartão de visita" />
-                            <NavbarMenuItem label="Cartão de visita" />
-                            <NavbarMenuItem label="Cartão de visita" />
-                            <NavbarMenuItem label="Cartão de visita" />
-                            <NavbarMenuItem label="Cartão de visita" />
-                            <NavbarMenuItem label="Cartão de visita" />
-                            <NavbarMenuItem label="Cartão de visita" />
-                            <NavbarMenuItem label="Cartão de visita" />
-                            <NavbarMenuItem label="Cartão de visita" />
+                        <NavbarDropdown label="Categorias">
+                            <NavbarDropdownItem label="Cartão de visita" />
+                            <NavbarDropdownItem label="Cartão de visita" />
+                            <NavbarDropdownItem label="Cartão de visitaCartão de visita" />
+                            <NavbarDropdownItem label="Cartão de visita" />
+                            <NavbarDropdownItem label="Cartão de visita" />
+                            <NavbarDropdownItem label="Cartão de visita" />
+                            <NavbarDropdownItem label="Cartão de visitaCartão de visita" />
+                            <NavbarDropdownItem label="Cartão de visita" />
+                            <NavbarDropdownItem label="Cartão de visita" />
+                            <NavbarDropdownItem label="Cartão de visita" />
+                            <NavbarDropdownItem label="Cartão de visita" />
+                            <NavbarDropdownItem label="Cartão de visita" />
+                            <NavbarDropdownItem label="Cartão de visita" />
+                            <NavbarDropdownItem label="Cartão de visita" />
+                            <NavbarDropdownItem label="Cartão de visita" />
+                            <NavbarDropdownItem label="Cartão de visita" />
                         </NavbarDropdown>
                         <NavbarMenuItem label="Cartão de visita" />
                         <NavbarMenuItem label="Flyers e Folhetos" />
