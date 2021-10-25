@@ -9,15 +9,21 @@ body {
   background-color: var(--global-background-color);
 }
 body main{
-  background-color: #EEE;
-  min-height: 57vh;
+  background-color: var(--main-background-color);
+  min-height: 66vh;
 }
 body footer{
-  min-height: 25vh;
+  min-height: 15vh;
   background-color: var(--footerbar-background-color);
   flex-grow: inherit;
-  color: #DDD;
+  color: #3A3A3A;
 }
 .container{
   max-width: 1150px!important;
+}
+
+#direitos{
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
 }

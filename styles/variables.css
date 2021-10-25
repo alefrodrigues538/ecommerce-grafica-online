@@ -1,6 +1,7 @@
 :root{
     --global-background-color:#eee;
 
+    --links-hover-color: #4297e0;
 
     --navbar-fontsize: 1rem;
     --navbar-background-color0:#fff;
@@ -13,6 +14,7 @@
 
     --facebook-icon-color: #3b5998;
     
+    --main-background-color: #dde1e7;
 
-    --footerbar-background-color: #4a4a4a;
+    --footerbar-background-color: #eee;
 }

@@ -1,6 +1,10 @@
 import '../styles/globals.css'
-import '../styles/navbar.css'
 import '../styles/variables.css'
+
+
+import '../styles/navbar.css'
+import '../styles/footer.css'
+
 
 import 'bootstrap/dist/css/bootstrap.css'
 

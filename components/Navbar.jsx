@@ -71,7 +71,7 @@ const SearchBar = ({ className }) => {
             <label className="custom-file-label searchbar-icon-label">
                 <i className="fas fa-search searchbar-icon"></i>
             </label>
-            <input type="text" className="form-control searchbar-style" placeholder="Pesquisar Produto" aria-label="Pesquisar Produto" aria-describedby="search-bar-input" />
+            <input type="text" className="form-control searchbar-style" placeholder="Busque por um produto..." aria-label="PesquisarProduto" aria-describedby="search-bar-input" />
         </div>
     )
 }
