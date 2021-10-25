@@ -1,15 +1,12 @@
 import React from 'react';
 import Image from 'next/image'
-import Link from 'next/link'
 
-import Logo from '../imgs/logo.png'
+import pix from '../../imgs/pix.png'
+import visa from '../../imgs/visa.png'
+import mastercard from '../../imgs/mastercard.png'
+import boleto from '../../imgs/boleto.png'
 
-import pix from '../imgs/pix.png'
-import visa from '../imgs/visa.png'
-import mastercard from '../imgs/mastercard.png'
-import boleto from '../imgs/boleto.png'
-
-import selossl from '../imgs/selossl.png'
+import selossl from '../../imgs/selossl.png'
 function components() {
     return (
         <footer>
@@ -24,11 +21,11 @@ function components() {
 
                     <div style={{ width: '100%', border: '1px solid #ccc', margin: '16px 0' }}></div>
 
-                    <div className="col-md-4 col-sm-6 footer-tablet-align">
+                    <div className="col-md-3 col-sm-6 footer-tablet-align">
                         <Image src={selossl} alt="selo-ssl" width={215} height={100} />
                     </div>
 
-                    <div className="col-md-4 col-sm-6 footer-margin-top footer-tablet-align">
+                    <div className="col-md-5 col-sm-6 footer-margin-top footer-tablet-align">
                         <h6 className="footer-text-tablet-align">Horario atendimento</h6>
                         <p>Segunda a Sexta, 09h às 18h /
                             Sabados das 09:00 às 15:00</p>

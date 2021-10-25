@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 
 import Image from 'next/image'
-
-import Logo from '../imgs/logo.png'
-
 import Link from 'next/link'
+
+import Logo from '../../imgs/logo.png'
 
 const NavbarDropdown = ({ children, label }) => {
     const [isVisible, setIsVisible] = useState(false)

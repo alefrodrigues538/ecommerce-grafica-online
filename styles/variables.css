@@ -14,7 +14,12 @@
 
     --facebook-icon-color: #3b5998;
     
-    --main-background-color: #dde1e7;
+    --main-background-color: #eeefff;
+    /* --main-background-color: #dde1e7; */
 
-    --footerbar-background-color: #eee;
+    --footerbar-background-color: #fff;
+
+
+    --cardprod-background-color: #fff;
+    --cardprod-price-text-color: #4297e0;
 }

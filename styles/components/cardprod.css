@@ -1,0 +1,40 @@
+.cardprod-container{
+    width: 200px;
+    background-color: var(--cardprod-background-color);
+    padding: 8px;
+    margin: 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+.cardprod-container:hover{
+    box-shadow: 0 0 12px #999;
+    transition: 0.1s;
+    cursor: pointer;
+}
+.cardprod-container:active{
+    box-shadow: 0 0 0 #fff;
+}
+
+.cardprod-title-text{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.cardprod-price-container{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+}
+.cardprod-promo-text{
+    font-size: 0.9rem;
+}
+.cardprod-price-text{
+    color: var(--cardprod-price-text-color);
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+.cardprod-unid-text{
+    font-size: 1rem;
+    font-weight: 500;
+}

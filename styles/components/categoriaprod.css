@@ -1,0 +1,27 @@
+.categprod-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.categprod-title{
+    width: 100%;
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 0;
+    margin: 16px 0 6px 0;
+}
+.categprod-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: auto;
+}
+
+@media only screen and (max-width: 1100px){
+    .categprod-items{
+        justify-content: space-between;
+    }
+}
+@media only screen and (max-width: 671px){
+    .categprod-items{
+        justify-content: space-evenly;
+    }
+}
