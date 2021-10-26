@@ -1,0 +1,120 @@
+.prod-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* column-gap: 1%; */
+}
+.prod-image-container{
+    width: max-content;
+}
+.prod-descricao-container{
+    /* width: 50%; */
+    padding: 8px 20px;
+    flex: 1;
+    background-color: #FFF;
+}
+.prod-component-container{
+    display: flex;
+    flex-flow: row wrap;
+}
+.prod-descricao{
+    text-align: justify;
+    font-size: 0.95rem;
+}
+.component-align{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 6px 0;
+}
+.component-title{
+    text-align: right;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+.component-price-container{
+    margin: 2vw 0 1vw 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.component-price-title{
+    font-size: 1.7rem;
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-weight: 800;
+    letter-spacing: -1px;
+    transition: .2s;
+}
+.component-old-price-text{
+    font-size: 1.2rem;
+    text-decoration: line-through;
+    color: #5A5A5A;
+    float: right;
+}
+.component-price-text{
+    font-size: 2.25rem;
+    color: var(--prod-price-color);
+    letter-spacing: -2px;
+    position: relative;
+    top: -14px;
+    font-weight: bold;
+}
+.btn-adicionar-carrinho{
+    width: 100%;
+}
+.btn-add-carrinho{
+    width: 100%;
+    background-color: var(--prod-price-color);
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 24px;
+    font-size: 1.2rem;
+    user-select: none;
+}
+.btn-add-carrinho:hover{
+    opacity: .8;
+}
+.btn-add-carrinho:active{
+    opacity: 1;
+}
+@media only screen and (max-width: 1024px){
+    .component-price-title{
+        font-size: 1.4rem!important;
+        transition: .2s;
+    }
+    .component-old-price-text{
+        font-size: 1rem!important;
+    }
+    .component-price-text{
+        font-size: 2rem!important;
+    }
+}
+@media only screen and (max-width: 992px){
+    .prod-container{
+        flex-wrap: wrap!important;
+        justify-content: center;
+    }
+    .prod-descricao-container{
+        width: 100%!important;
+        flex: none;
+    }
+}
+@media only screen and (max-width: 435px){
+    .component-title{
+        font-size: 0.85rem;
+    }
+    .component-price-title{
+        font-size: 1.2rem!important;
+    }
+    .component-price-text{
+        font-size: 1.8rem!important;
+    }
+}
+@media only screen and (max-width: 335px){
+    .component-price-text-container{
+        margin: 3% 0;
+    }
+}

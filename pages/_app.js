@@ -7,6 +7,7 @@ import '../styles/pages/footer.css'
 
 //PAGES
 import '../styles/pages/home.css'
+import '../styles/pages/prod.css'
 
 //COMPONENTS
 import '../styles/components/cardprod.css'

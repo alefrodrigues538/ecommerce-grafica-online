@@ -53,10 +53,10 @@ const NavbarDropdownItem = ({ label }) => {
         </div>
     )
 }
-const NavbarMenuItem = ({ label, hideLowResolution }) => {
+const NavbarMenuItem = ({ label, href }) => {
     return (
         <div className="menuitem-container">
-            <Link href="/">
+            <Link href={href ? href : "#"}>
                 <span className={"navbar-menuitem-label"}>{label ? label : 'menu-item'}</span>
             </Link>
         </div>
@@ -138,10 +138,10 @@ function Navbar() {
                             <NavbarDropdownItem label="Cartão de visita" />
                             <NavbarDropdownItem label="Cartão de visita" />
                         </NavbarDropdown>
-                        <NavbarMenuItem label="Cartão de visita" />
-                        <NavbarMenuItem label="Flyers e Folhetos" />
-                        <NavbarMenuItem label="Autocolantes" />
-                        <NavbarMenuItem label="Logotípo á Medida" />
+                        <NavbarMenuItem label="Cartão de visita" href={"/produtos/cartao-de-visita"} />
+                        <NavbarMenuItem label="Flyers e Folhetos" href={"/produtos/flyers-e-folhetos"} />
+                        <NavbarMenuItem label="Autocolantes" href={"/produtos/autocolantes"} />
+                        <NavbarMenuItem label="Logotípo á Medida" href={"/produtos/logotipo"} />
                         <LoginButton />
                     </div>
                 </div>
