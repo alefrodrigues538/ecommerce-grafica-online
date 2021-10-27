@@ -8,6 +8,10 @@ import '../styles/pages/footer.css'
 //PAGES
 import '../styles/pages/home.css'
 import '../styles/pages/prod.css'
+import '../styles/pages/produtos.css'
+import '../styles/pages/login.css'
+import '../styles/pages/cadastro.css'
+import '../styles/pages/carrinho.css'
 
 //COMPONENTS
 import '../styles/components/cardprod.css'

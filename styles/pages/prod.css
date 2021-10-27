@@ -6,6 +6,7 @@
 }
 .prod-image-container{
     width: max-content;
+    margin: 0 16px;
 }
 .prod-descricao-container{
     /* width: 50%; */
@@ -16,6 +17,11 @@
 .prod-component-container{
     display: flex;
     flex-flow: row wrap;
+}
+.prod-title{
+    color: var(--links-hover-color);
+    text-align: center;
+    text-transform: uppercase;
 }
 .prod-descricao{
     text-align: justify;

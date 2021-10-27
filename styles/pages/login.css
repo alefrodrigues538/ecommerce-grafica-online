@@ -1,0 +1,30 @@
+.page-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2vw;
+}
+.login-divider{
+    width: 1px;
+    border: 1px solid #ccc;
+}
+.login-container{
+    width: 50%;
+    text-align: left;
+}
+.cadastro-container{
+    width: 40%;
+    text-align: left;
+}
+#info-cadastro{
+    text-align: justify;
+    font-size: 0.9rem;
+}
+#btn-esqueceu-senha{
+    cursor: pointer;
+    user-select: none;
+    text-align: right;
+}
+#btn-esqueceu-senha:hover{
+    color: var(--links-hover-color);
+}

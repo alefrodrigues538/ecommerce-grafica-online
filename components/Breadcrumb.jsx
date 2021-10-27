@@ -32,6 +32,7 @@ const styles = {
     breadcrumbContainer: {
         backgroundColor: 'rgba(0,0,0,0)',
         marginBottom: 0,
+        margin: '12px 0',
     },
     activeCrumb: {
         width: '250px',

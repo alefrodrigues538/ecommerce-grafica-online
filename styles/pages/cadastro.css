@@ -1,0 +1,35 @@
+.cadastro-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: space-evenly;
+}
+.form-acesso{
+    display: block;
+    width: 500px;
+    max-width: 100%;
+    padding: 0 16px;
+}
+.form-info-pessoal{
+    display: block;
+    width: 500px;
+    max-width: 100%;
+    padding: 0 16px;
+}
+.cadastro-title{
+    background-color: #ccc;
+    padding: 16px;
+}
+
+@media only screen and (max-width: 1024px){
+    .cadastro-container{
+        justify-content: center;
+    }
+    .form-acesso{
+        width: 750px;
+    }
+    .form-info-pessoal{
+        width: 750px;
+    }
+}

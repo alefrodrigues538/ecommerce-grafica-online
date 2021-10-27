@@ -11,50 +11,50 @@ export default function Home() {
       <CategoriaProduto title="Nossos Produtos">
         <CardProduto
           src={imgprod}
-          href="#"
+          href="/produtos/item0"
           price={'69,90'}
           unidade={"/1 un."} />
         <CardProduto
           src={imgprod}
-          href="#"
+          href="/produtos/item0"
           price={'690,90'}
           unidade={"/1000 un."} />
         <CardProduto
           src={imgprod}
-          href="#"
+          href="/produtos/item0"
           price={'119,90'} />
         <CardProduto
           src={imgprod}
-          href="#"
+          href="/produtos/item0"
           price={'69,90'}
           unidade={"/1 un."} />
         <CardProduto
           src={imgprod}
-          href="#"
+          href="/produtos/item0"
           price={'690,90'}
           unidade={"/1000 un."} />
         <CardProduto
           src={imgprod}
-          href="#"
+          href="/produtos/item0"
           price={'119,90'} />
         <CardProduto
           src={imgprod}
-          href="#"
+          href="/produtos/item0"
           price={'69,90'}
           unidade={"/1 un."} />
         <CardProduto
           src={imgprod}
-          href="#"
+          href="/produtos/item0"
           price={'690,90'}
           unidade={"/1000 un."} />
         <CardProduto
           src={imgprod}
-          href="#"
+          href="/produtos/item0"
           price={'690,90'}
           unidade={"/1000 un."} />
         <CardProduto
           src={imgprod}
-          href="#"
+          href="/produtos/item0"
           price={'690,90'}
           unidade={"/1000 un."} />
       </CategoriaProduto>

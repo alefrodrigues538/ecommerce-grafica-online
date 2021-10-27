@@ -108,10 +108,12 @@ function Navbar() {
                         </Link>
                         <SearchBar />
 
-                        <button type="button" className="btn btn-outline-primary">
-                            <i className="fas fa-shopping-cart" /> Carrinho
-                            (0)
-                        </button>
+                        <Link href="/carrinho">
+                            <button type="button" className="btn btn-outline-primary">
+                                <i className="fas fa-shopping-cart" /> Carrinho
+                                (0)
+                            </button>
+                        </Link>
 
                     </div>
                     <div style={{ display: 'flex' }}>
